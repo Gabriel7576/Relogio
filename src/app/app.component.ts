@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
     let minutes = new Date().getMinutes();
     let seconds = new Date().getSeconds();
 
-    return `${this.addZero(hours)}:${this.addZero(minutes)}:${this.addZero(seconds)}`;
+    return `T: ${this.addZero(hours)}:${this.addZero(minutes)}:${this.addZero(seconds)}`;
   }
 
   addZero(time:number){
